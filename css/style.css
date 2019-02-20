@@ -118,6 +118,21 @@ blockquote:after {
   color: #1a4c5e;
 }
 
+.labels-center {
+  display: inline-block;
+  text-align: justify;
+  width: 75%;
+  padding: 5px;
+  vertical-align: top;
+  margin-top: 10px;
+  margin-left: 15px;
+  font-weight: 500;
+  font-size: 1.2em;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #1a4c5e;
+}
+
 .rightTab {
   display: inline-block;
   text-align: left;
