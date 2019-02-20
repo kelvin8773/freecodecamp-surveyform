@@ -1,0 +1,195 @@
+@import url(
+  https://fonts.googleapis.com/css?family=PT+Sans|Ubuntu:300,
+  400,
+  700
+);
+html,
+body {
+  background: #6598e6;
+  text-align: center;
+  font: normal 300 1em/1.5em "Ubuntu", sans-serif;
+  min-width: 500px;
+  color: rgb(134, 134, 148);
+}
+
+#title {
+  font-size: 2em;
+  color: #e08d59;
+  font-weight: bold;
+  margin: 30px;
+  padding: 1rem;
+}
+
+#form-outer {
+  background-color: rgb(238, 249, 255);
+  margin: 0 auto;
+  border-radius: 10px;
+  width: 75%;
+  max-width: 900px;
+  padding: 10px;
+  padding-top: 20px;
+}
+
+.container {
+  background: rgb(255, 255, 255);
+  text-align: justify;
+  width: 80%;
+  max-width: 680px;
+  min-width: 280px;
+  margin: 2em auto 0;
+  padding: 1.5em;
+  border-radius: 15px;
+}
+
+p {
+  margin-bottom: 1.5em;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+.linetext {
+  font-size: 1.4em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #e39d60;
+}
+
+.subtitle {
+  color: #e0b559;
+  text-align: center;
+  font-weight: bold;
+  font: 1.5em "PT Sans";
+  margin-bottom: 1em;
+}
+
+blockquote {
+  display: block;
+  border-width: 2px 0;
+  border-style: solid;
+  border-color: #eee;
+  padding: 1.5em 0 0.3em;
+  margin: 1.5em 0;
+  position: relative;
+  line-height: 1.3em;
+  font-size: 1.23em;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+blockquote:before {
+  content: "\201C";
+  position: absolute;
+  top: 0em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: 3rem;
+  height: 2rem;
+  font: 6em/1.08em "PT Sans", sans-serif;
+  color: #666;
+  text-align: center;
+}
+blockquote:after {
+  content: "\2013 \2003"attr(cite);
+  display: block;
+  text-align: right;
+  padding: 0.5em;
+  font-size: 1.05em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #3b78d3;
+}
+
+.labels {
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+  padding: 5px;
+  vertical-align: top;
+  margin-top: 10px;
+  font-weight: 350;
+  font-size: 1.08em;
+}
+
+.rightTab {
+  display: inline-block;
+  text-align: left;
+  width: 48%;
+  vertical-align: middle;
+}
+
+.input-field {
+  height: 20px;
+  width: 280px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 4px;
+  font-size: 1.1em;
+}
+
+#userAge {
+  width: 40px;
+}
+
+.userRatings,
+input[type="checkbox"] {
+  float: left;
+  margin-right: 10px;
+}
+
+#submit {
+  background-color: #59ace0;
+  border-radius: 6px;
+  color: white;
+  font-size: 1em;
+  height: 40px;
+  width: 96px;
+  margin: 10px;
+  border: 0px solid;
+}
+
+.dropdown {
+  height: 35px;
+  width: 140px;
+  padding: 5px;
+  margin: 10px;
+  margin-top: 15px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+
+.radio,
+.checkbox {
+  position: relative;
+  left: -43px;
+  margin-left: 10px;
+  display: block;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 833px) {
+  .input-field {
+    width: 80%;
+  }
+  select {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .labels {
+    width: 100%;
+    text-align: left;
+  }
+  .rightTab {
+    width: 80%;
+    float: left;
+  }
+  .input-field {
+    width: 100%;
+  }
+  select {
+    width: 100%;
+  }
+}

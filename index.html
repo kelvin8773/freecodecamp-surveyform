@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey for 4th Industrial Revolution</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div id="form-outer">
+      <!-- Form Title -->
+
+      <h1 id="title">The 4th Industrial Revolution is Coming!</h1>
+
+      <!-- description -->
+      <div class="container">
+        <blockquote cite="Andrew Yang @Yang2020">
+          In the next 12 years, 1 out of 3 American workers is at risk of losing
+          their jobs to new technologies—and unlike with previous waves of
+          automation, this time new jobs will not appear quickly enough in large
+          enough numbers to make up for it. To avoid an unprecedented crisis,
+          we’re going to have to find a new solution, unlike anything we’ve done
+          before.
+        </blockquote>
+      </div>
+
+      <div class="container">
+        <blockquote cite="Elon Musk @2017">
+          There will be fewer and fewer jobs that a robot cannot do better. I
+          want to be clear. These are not things I wish will happen; these are
+          things I think probably will happen.
+        </blockquote>
+      </div>
+
+      <div class="container">
+        <blockquote cite="Bill Gate @2017">
+          A problem of excess [automation] forces us to look at the individuals
+          affected and take those extra resources and make sure they’re directed
+          to them in terms of re-education and income policies . . .
+        </blockquote>
+      </div>
+
+      <p id="description" class="linetext">
+        Please let us know how much you know about it, thanks!
+      </p>
+
+      <form id="survey-form" method="POST" action="/">
+        <!-- user info part  -->
+        <div id="userinfo" class="container">
+          <div class="subtitle">A Bit About You</div>
+
+          <div class="rowTab">
+            <div class="labels">
+              <label id="name-label" for="name">* Name: </label>
+            </div>
+            <div class="rightTab">
+              <input
+                autofocus
+                type="text"
+                name="name"
+                id="name"
+                class="input-field"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="rowTab">
+            <div class="labels">
+              <label id="email-label" for="email">* Email: </label>
+            </div>
+            <div class="rightTab">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="input-field"
+                required
+                placeholder="Enter your Email"
+              />
+            </div>
+          </div>
+
+          <div class="rowTab">
+            <div class="labels">
+              <label id="number-label" for="age">* Age: </label>
+            </div>
+            <div class="rightTab">
+              <input
+                type="number"
+                name="age"
+                id="number"
+                min="3"
+                max="125"
+                class="input-field"
+                placeholder="Age"
+              />
+            </div>
+          </div>
+
+          <div class="rowTab">
+            <div class="labels">
+              <label for="currentPos"
+                >Which option best describes your current situation</label
+              >
+            </div>
+            <div class="rightTab">
+              <select id="dropdown" name="currentPos" class="dropdown">
+                <option disabled value>Select an option</option>
+                <option value="student">Student</option>
+                <option value="fulltime">Full Time Employee</option>
+                <option value="parttime">Part Time Employee</option>
+                <option value="selfemploy">Self Employed</option>
+                <option value="owner">Business Owner</option>
+                <option value="retire">Retired</option>
+                <option value="preferNo">Prefer not to say</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Survey Question Part  -->
+        <div id="questions" class="container">
+          <div class="subtitle">What do you think?</div>
+
+          <div class="rowTab">
+            <div class="labels">
+              <label for="userRating"
+                >* How likely do you think your current jobs are going to be
+                replaced by robots in next 10 Years?</label
+              >
+            </div>
+            <div class="rightTab">
+              <ul style="list-style: none;">
+                <li class="radio">
+                  <label
+                    >Definitely<input
+                      name="radio-buttons"
+                      value="1"
+                      type="radio"
+                      class="userRatings"
+                  /></label>
+                </li>
+                <li class="radio">
+                  <label
+                    >Maybe<input
+                      name="radio-buttons"
+                      value="2"
+                      type="radio"
+                      class="userRatings"
+                  /></label>
+                </li>
+                <li class="radio">
+                  <label
+                    >Not sure<input
+                      name="radio-buttons"
+                      value="3"
+                      type="radio"
+                      class="userRatings"
+                  /></label>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="rowTab">
+            <div class="labels">
+              <label for="most-like"
+                >What would you do base the response above?
+              </label>
+            </div>
+            <div class="rightTab">
+              <select id="most-like" name="mostLike" class="dropdown">
+                <option disabled selected value>Select an option</option>
+                <option value="option1">Find Another Job</option>
+                <option value="option2">Start A New Business</option>
+                <option value="option3">Change Career</option>
+                <option value="option4">Retire</option>
+                <option value="option5">Do Nothing</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="rowTab">
+            <div class="labels">
+              <label for="preferences"
+                >What do you think the Government Should do?<br />(Check all
+                that apply):
+              </label>
+            </div>
+            <div class="rightTab">
+              <ul id="preferences" style="list-style: none;">
+                <li class="checkbox">
+                  <label
+                    ><input
+                      name="prefer"
+                      value="1"
+                      type="checkbox"
+                      class="userRatings"
+                    />Legalize robotization and tax from them</label
+                  >
+                </li>
+                <li class="checkbox">
+                  <input
+                    name="prefer"
+                    value="2"
+                    type="checkbox"
+                    class="userRatings"
+                  />Help people getting another jobs
+                </li>
+                <li class="checkbox">
+                  <label
+                    ><input
+                      name="prefer"
+                      value="3"
+                      type="checkbox"
+                      class="userRatings"
+                    />Provide more social benefits for public</label
+                  >
+                </li>
+                <li class="checkbox">
+                  <label
+                    ><input
+                      name="prefer"
+                      value="4"
+                      type="checkbox"
+                      class="userRatings"
+                    />Creating more jobs opportunities</label
+                  >
+                </li>
+                <li class="checkbox">
+                  <label
+                    ><input
+                      name="prefer"
+                      value="5"
+                      type="checkbox"
+                      class="userRatings"
+                    />Help people rather than robot</label
+                  >
+                </li>
+                <li class="checkbox">
+                  <label
+                    ><input
+                      name="prefer"
+                      value="6"
+                      type="checkbox"
+                      class="userRatings"
+                    />Give out more money for people who lost the jobs</label
+                  >
+                </li>
+                <li class="checkbox">
+                  <label
+                    ><input
+                      name="prefer"
+                      value="7"
+                      type="checkbox"
+                      class="userRatings"
+                    />Tax more for high tech industries</label
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="rowTab">
+            <div class="labels">
+              <label for="comments">Any Comments or Suggestions?</label>
+            </div>
+            <div class="rightTab">
+              <textarea
+                id="comments"
+                class="input-field"
+                style="height:200px;resize:vertical;"
+                name="comment"
+                placeholder="We are Love to hear from you ..."
+              ></textarea>
+            </div>
+          </div>
+        </div>
+
+        <!-- Final Submint -->
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
